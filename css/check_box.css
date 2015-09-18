@@ -1,0 +1,42 @@
+
+/* 
+    This stylesheet contain css for design checkboxes.
+    Created on : Sep 17, 2015, 2:28:16 PM
+    Author     : Md. Sourav
+*/
+
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] + label {
+    color: #8D8D8D;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+}
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:.7em;
+    height:.7em;
+    margin:1px 10px 4px 0;
+    vertical-align:middle;
+    cursor:pointer;
+    -moz-border-radius:  50%;
+    border: 3px solid #CCCCCC;
+}
+
+input[type="checkbox"] + label span {
+     background-color:#e7e6e6;
+}
+
+input[type="checkbox"]:checked + label span{
+
+     background-color:#F16524;
+}
+
+input[type="checkbox"] + label span,
+input[type="checkbox"]:checked + label span {
+  -webkit-transition:background-color 0.4s linear;
+  -o-transition:background-color 0.4s linear;
+  -moz-transition:background-color 0.4s linear;
+  transition:background-color 0.4s linear;
+}
